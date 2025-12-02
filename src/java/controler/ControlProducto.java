@@ -69,7 +69,7 @@ public class ControlProducto extends HttpServlet {
                 String rutaQR = getServletContext().getRealPath("/QR/qr_" + codGenerado + ".png");
 
                 // CONTENIDO DEL QR
-                String contenidoQR = "http://38.25.51.135:8083/Integrador_final/verProductos.jsp?op=Consultar&cod=" + codGenerado;
+                String contenidoQR = "http://192.168.101.7:8080/Escanear/verProductos.jsp?op=Consultar&cod=" + codGenerado;
 
 
                 // GENERAR QR
@@ -103,3 +103,4 @@ public class ControlProducto extends HttpServlet {
     }
 
 }
+
